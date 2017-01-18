@@ -1,4 +1,6 @@
 .idea
 out
-target
 *.class
+target
+lib
+*.iml
