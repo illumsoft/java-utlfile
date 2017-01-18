@@ -1,0 +1,5 @@
+Place Oracle Instant Client in this directory
+(maven expects to find ojdbc6.jar here).
+
+Alternatively you can edit pom.xml to point $ORACLE_HOME/jdbc/lib/ojdbc6.jar
+which is installed with Oracle database or client.
