@@ -143,8 +143,8 @@ public class OraFile {
             output = new BufferedOutputStream(new FileOutputStream(toFile));
 
             stmt = createStatement(sqlGetRaw);
+            stmt.registerOutParameter("buffer", OracleTypes.RAW);
             do {
-                stmt.registerOutParameter("buffer", OracleTypes.RAW);
                 stmt.execute();
                 buffer = stmt.getBytes("buffer");
                 if (buffer != null) {
